@@ -143,11 +143,11 @@ uint8_t DtaDevLinuxSata::sendCmd(ATACOMMAND cmd, uint8_t protocol, uint16_t comI
      * see the SG HOWTO for the best info I could find
      */
     
-    LOG(I) << "Command buffer " << sizeof (cdb) << " bytes";
+    /*LOG(I) << "Command buffer " << sizeof (cdb) << " bytes";
     IFLOG(I) DtaHexDump(cdb, sizeof (cdb));
 
-    LOG(I) << "Buffer " << bufferlen << " bytes";
-    IFLOG(I) DtaHexDump(buffer, bufferlen);
+    LOG(I) << "Data Buffer " << bufferlen << " bytes";
+    IFLOG(I) DtaHexDump(buffer, bufferlen); */
 
     sg.interface_id = 'S';
     //      sg.dxfer_direction = Set in if above
